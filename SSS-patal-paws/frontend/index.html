@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet your new best friend at Mimme's Patal Paws, a cute pet adoption portal.">
+  <title>Mimme's Patal Paws | Find Your Best Friend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">♡ Little paws, big love — find your forever friend ♡</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Mimme's Patal Paws home">
+      <span class="brand-paw" aria-hidden="true">🐾</span>
+      <span><strong>Mimme's</strong><small>PATAL PAWS</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#pets">Meet the pets</a>
+      <a href="#how-it-works">How it works</a>
+      <a class="nav-cta" href="#pets">Find my friend ♡</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">A little love goes a long way ✿</span>
+        <h1>Your new bestie is <span>waiting for you.</span></h1>
+        <p>Big cuddles, tiny paws, happy chirps and forever friendships. Meet lovely animals looking for a safe, caring home.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#pets">Meet the cuties <span>♡</span></a>
+          <a class="button button-soft" href="#how-it-works">How adoption works</a>
+        </div>
+        <div class="hero-note"><span class="tiny-paw">🐾</span> Adopt with love. Care for a lifetime.</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-sticker sticker-one">made with ♡</div>
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1000&q=85" alt="Happy dog enjoying the outdoors">
+        </div>
+        <div class="hero-sticker sticker-two">your bestie awaits ✨</div>
+        <span class="decor decor-heart">♡</span><span class="decor decor-star">✦</span>
+      </div>
+    </section>
+
+    <section class="stats section-wrap" aria-label="Our promise">
+      <div><span class="stat-icon">🐶</span><strong>Every kind</strong><small>of animal deserves love</small></div>
+      <div><span class="stat-icon">🏡</span><strong>Forever homes</strong><small>over temporary homes</small></div>
+      <div><span class="stat-icon">💗</span><strong>Love first</strong><small>always adopt responsibly</small></div>
+    </section>
+
+    <section class="pets-section section-wrap" id="pets">
+      <div class="section-heading">
+        <span class="eyebrow">The cutest meet-cute starts here</span>
+        <h2>Meet your future <span>roommate</span> ♡</h2>
+        <p>Browse the little faces waiting for their happy ending.</p>
+      </div>
+      <div class="pet-controls">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search by name or breed..." aria-label="Search pets"></label>
+        <label class="filter-label"><span>Pet type</span>
+          <select id="speciesFilter" aria-label="Filter by pet type">
+            <option value="all">All animals</option>
+            <option value="dog">Dogs</option><option value="cat">Cats</option>
+            <option value="bird">Birds</option><option value="horse">Horses</option>
+            <option value="fish">Fish</option><option value="turtle">Turtles</option>
+            <option value="rabbit">Rabbits</option><option value="hamster">Hamsters</option>
+            <option value="guinea pig">Guinea pigs</option><option value="other">Other pets</option>
+          </select>
+        </label>
+        <label class="filter-label"><span>Availability</span>
+          <select id="statusFilter" aria-label="Filter by availability">
+            <option value="available">Available</option><option value="all">All statuses</option>
+            <option value="pending">Pending</option><option value="adopted">Adopted</option>
+          </select>
+        </label>
+      </div>
+      <p class="results-line" id="resultsLine" aria-live="polite">Finding the cutest faces...</p>
+      <div class="pet-grid" id="petGrid" aria-live="polite"></div>
+      <div class="empty-state hidden" id="emptyState"><span>🐾</span><h3>No little faces found</h3><p>Try another search or choose a different pet type.</p></div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <span class="eyebrow">Easy as one, two, woof!</span>
+          <h2>How adoption <span>works</span></h2>
+          <p>A thoughtful process helps every pet find the right home.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card"><div class="step-emoji">🔎</div><span class="step-number">STEP 01</span><h3>Find your match</h3><p>Explore pets and read their details to find a companion that suits your home.</p></article>
+          <article class="step-card"><div class="step-emoji">📝</div><span class="step-number">STEP 02</span><h3>Send a request</h3><p>Complete the adoption form with your contact details and why you'd love to adopt.</p></article>
+          <article class="step-card"><div class="step-emoji">🏡</div><span class="step-number">STEP 03</span><h3>Make it official</h3><p>The adoption team reviews the request and contacts you about the next steps.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="care-banner section-wrap">
+      <div class="care-emoji">💌</div>
+      <div><h2>Adoption is a promise, not a trend.</h2><p>Please choose a pet you can care for with patience, time, safety and love.</p></div>
+      <a href="#pets" class="button button-primary">Meet the pets ♡</a>
+    </section>
+
+    <section class="admin-section section-wrap" id="request-management">
+      <details class="admin-panel">
+        <summary>Project admin · Manage adoption requests</summary>
+        <p class="admin-note">For your local college demo. The admin API key is checked by the backend; never share it or commit it to GitHub.</p>
+        <form id="adminKeyForm" class="admin-key-form">
+          <label for="adminKey">Admin API key</label>
+          <input id="adminKey" type="password" autocomplete="off" placeholder="Enter the ADMIN_API_KEY from backend/.env" required>
+          <button class="button button-primary" type="submit">Load requests</button>
+        </form>
+        <p id="adminMessage" class="form-message" aria-live="polite"></p>
+        <div id="adminRequests" class="admin-requests"></div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-paw">🐾</span><span><strong>Mimme's</strong><small>PATAL PAWS</small></span></a>
+    <p>Made with love for the little lives who make our world bigger. ♡</p>
+    <span>© <span id="year"></span> Mimme's Patal Paws</span>
+  </footer>
+
+  <dialog id="petDialog" class="pet-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close adoption form">×</button>
+    <div id="dialogPetSummary" class="dialog-pet-summary"></div>
+    <div class="dialog-heading"><span class="eyebrow">A new chapter begins here</span><h2>Adoption request <span>♡</span></h2><p>Tell us a little about yourself. Fields marked * are required.</p></div>
+    <form id="adoptionForm">
+      <input type="hidden" id="petId" name="pet_id">
+      <div class="form-grid">
+        <label>Full name *<input id="applicantName" name="applicant_name" maxlength="100" required placeholder="Your full name"></label>
+        <label>Email address *<input id="applicantEmail" name="email" type="email" maxlength="254" required placeholder="you@example.com"></label>
+        <label>Phone number *<input id="applicantPhone" name="phone" type="tel" inputmode="tel" maxlength="20" pattern="[0-9+() -]{7,20}" required placeholder="Your contact number"></label>
+        <label class="full-field">Why would you like to adopt? *<textarea id="applicantReason" name="reason" minlength="10" maxlength="1000" rows="4" required placeholder="Tell us how you would care for your new friend..."></textarea></label>
+      </div>
+      <p class="form-message" id="formMessage" aria-live="polite"></p>
+      <button class="button button-primary submit-button" id="submitRequest" type="submit">Send adoption request ♡</button>
+      <p class="privacy-note">Your details are used for this adoption request only in this demo project.</p>
+    </form>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
